@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 import re
+import doctest
 from importlib import import_module
 from os import getenv
 from os.path import dirname, join, realpath
@@ -54,3 +55,5 @@ intersphinx_mapping = {
     'numpy': ('http://docs.scipy.org/doc/numpy/', None),
     'pandas': ('http://pandas.pydata.org/pandas-docs/stable/', None)
 }
+doctest_default_flags = doctest.NORMALIZE_WHITESPACE
+doctest_global_cleanup = "True"
